@@ -105,6 +105,7 @@ class ComplicatedPlugin( octoprint.plugin.ProgressPlugin, octoprint.plugin.Setti
 
 __plugin_name__ = 'Complicated Plugin'
 __plugin_version__ = '1.1.3'
+__plugin_pythoncompat__ = ">=2.7,<4"  # python 2 and 3
 __plugin_implementation__ = ComplicatedPlugin()
 __plugin_hooks__ = {
     "octoprint.plugin.softwareupdate.check_config": __plugin_implementation__.get_update_information
